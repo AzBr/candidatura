@@ -26,5 +26,11 @@ class Modelpaineis extends CI_Model {
         return $result;
     }
 
+    public function pegaCargos(){
+        $query = $this->db->query("SELECT * FROM \"Cargos\"");
+        $result = $query->result();
+        return $result;
+    }
+
 
 }
