@@ -7,6 +7,10 @@ body{
     height:180px;
     border-radius:20px;
 }
+.politico_perfil_mini{
+    width:100px;
+    height:100px;
+}
 .politico_menu{
     margin-top:10px;
 
@@ -19,6 +23,7 @@ body{
 }
 .propostas_conteudo{
     padding-top:5px !important;
+
 }
 .proposta_rating{
     float:right;
@@ -47,5 +52,36 @@ body{
 }
 .propostas_bloco_filtro{
     background-color:white;
-    height:1000px;
+    height:calc(100vh - 70px);
+}
+.politico_bloco{
+    background-color:green;
+}
+.propostas_ordem{
+    float:right;
+    font-size:16px;
+    font-weight: normal;
+}
+.nav > li{
+    font-weight: normal;
+    font-size:15px;
+}
+.panel-title{
+    font-size:14px;
+}
+.panel-body{
+    font-size:12px;
+}
+.politicos_bloco{
+    padding:10px !important;
+}
+.politico_foto_box{
+    width:100px;
+    margin-right:2px;
+    float:left;
+}
+.politico_infos{
+    float:left;  }
+.politico_infos > p{
+    font-size:12px;
 }
