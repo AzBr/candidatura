@@ -1,0 +1,14 @@
+Options -Indexes
+RewriteEngine on
+
+RewriteBase /
+RewriteCond $1 !^(index\.php|assets|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^htaccess/ [NC,OR]
+RewriteCond %{REQUEST_URI} ^system/function/ [NC,OR]
+#just make sure the last rule does  NOT have an OR
+RewriteCond %{REQUEST_URI} ^system/class/ [NC]
+RewriteRule . - [R=404,L,NC]

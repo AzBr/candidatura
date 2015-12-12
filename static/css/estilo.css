@@ -1,0 +1,14 @@
+.politico_perfil{
+    width:200px;
+    height:200px;
+}
+.politico_menu{
+    margin-top:10px;
+    text-align:center;
+}
+.politico_conteudo{
+    float:right;
+    margin-right:2%;
+    background-color:#eeeeee;
+    height:calc(100vh - 100px);
+}
