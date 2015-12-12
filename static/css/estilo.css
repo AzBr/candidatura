@@ -1,14 +1,51 @@
+body{
+    background-color: #faf8cb;
+    padding-top: 70px !important;
+}
 .politico_perfil{
-    width:200px;
-    height:200px;
+    width:180px;
+    height:180px;
+    border-radius:20px;
 }
 .politico_menu{
     margin-top:10px;
-    text-align:center;
+
 }
 .politico_conteudo{
     float:right;
-    margin-right:2%;
+    margin-right:1%;
     background-color:#eeeeee;
     height:calc(100vh - 100px);
+}
+.propostas_conteudo{
+    padding-top:5px !important;
+}
+.proposta_rating{
+    float:right;
+}
+.proposta_box{
+    margin-bottom:10px;
+}
+.proposta_superior{
+    padding-bottom:5px;
+    border-bottom: thin double #ff0000;
+
+}
+.jumbotron{
+    background-color:white;
+}
+.proposta_veja{
+    float:right;
+    font-size:14px;
+}
+.proposta_texto{
+    font-size:14px !important;
+}
+.propostas_filter{
+    padding-left:10px;
+    height:1000px;
+}
+.propostas_bloco_filtro{
+    background-color:white;
+    height:1000px;
 }

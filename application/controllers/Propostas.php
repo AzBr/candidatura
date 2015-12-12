@@ -5,7 +5,8 @@ class Propostas extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->model('Testmodel');
-		echo 	$this->Testmodel->teste();
+		$this->load->view("template/header");
+		$this->load->view("propostas/listagem");
+		$this->load->view("template/footer");
 	}
 }
