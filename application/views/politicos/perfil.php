@@ -2,7 +2,7 @@
     <div class=" col-md-3">
         <div class="text-center">
             <div class="propostas_bloco_filtro col-md-12">
-                <img src="<?php echo base_url()?>static/imgs/dilma.jpg" class="politico_perfil"/>
+                <img src="<?php echo $candidato[0]->Imagem; ?>" class="politico_perfil"/>
                 <ul class="nav nav-pills nav-stacked politico_menu">
                     <li class="active"><a href="#">Introdução</a></li>
                     <li><a href="<?php echo base_url()?>">Biografia</a></li>
@@ -13,6 +13,7 @@
             </div>
         </div>
     </div>
+    <h1><?php echo $candidato[0]->Nome; ?></h1>
     <div class="politico_perfil_conteudo col-md-9 jumbotron">
         <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
