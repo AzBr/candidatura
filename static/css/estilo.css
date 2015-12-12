@@ -29,11 +29,12 @@ body{
     float:right;
 }
 .proposta_box{
-    margin-bottom:10px;
+    margin-bottom:50px;
 }
 .proposta_superior{
     padding-bottom:5px;
     border-bottom: thin double #ff0000;
+
 
 }
 .jumbotron{
@@ -77,11 +78,29 @@ body{
 }
 .politico_foto_box{
     width:100px;
-    margin-right:2px;
+    margin-right:10px;
     float:left;
 }
 .politico_infos{
-    float:left;  }
+    float:left;
+    display:table;
+}
+.politico_infos > h5 > span{
+    font-size:13px;
+    font-weight: normal;
+}
 .politico_infos > p{
     font-size:12px;
+    float:left;
+}
+.proposta_box > a{
+    float:right;
+}
+.proposta_vis{
+    font-size:13px;
+    color:black;
+}
+.proposta_title > a{
+    color:black;
+
 }
