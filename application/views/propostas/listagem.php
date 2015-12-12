@@ -9,24 +9,22 @@
 </script>
 <div class="row">
     <div class="propostas_filter col-md-3">
-
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">Categorias</h3>
             </div>
             <div class="panel-body">
+                <input type="checkbox" name="categoria[]" id="cat[todos]" checked>
+                <label for="cat[todos]"> &nbsp; &nbsp;Todos</label><br>
 
-                <input type="checkbox" name="categoria[]" id="cat[1]" checked>
-                <label for="cat[1]">Educação</label><br>
+                <?php
 
-                <input type="checkbox" name="categoria[]" id="cat[1]" checked>
-                <label for="cat[1]">Educação</label><br>
+                foreach ($categorias as $categoria){
+                    echo '<input type="checkbox" name="categoria[]" id="cat['.$categoria->id_Categoria.']" checked>
+                        <label for="cat['.$categoria->id_Categoria.']"> &nbsp; &nbsp;'.$categoria->Nome.'</label><br>';
+                }
 
-                <input type="checkbox" name="categoria[]" id="cat[1]" checked>
-                <label for="cat[1]">Educação</label><br>
-
-                <input type="checkbox" name="categoria[]" id="cat[1]" checked>
-                <label for="cat[1]">Educação</label>
+                ?>
             </div>
         </div>
 
@@ -35,7 +33,17 @@
                 <h3 class="panel-title">Estados</h3>
             </div>
             <div class="panel-body">
-                Panel content
+                <input type="checkbox" name="categoria[]" id="estado[todos]" checked>
+                <label for="estado[todos]"> &nbsp; &nbsp;Todos</label><br>
+
+                <?php
+
+                foreach ($estados as $estado){
+                    echo '<input type="checkbox" name="estado[]" id="estado['.$estado->Sigla.']" checked>
+                        <label for="estado['.$estado->Sigla.']"> &nbsp; &nbsp;'.$estado->Sigla.'</label><br>';
+                }
+
+                ?>
             </div>
         </div>
 
@@ -44,14 +52,24 @@
                 <h3 class="panel-title">Partidos</h3>
             </div>
             <div class="panel-body">
-                Panel content
+                <input type="checkbox" name="categoria[]" id="part[todos]" checked>
+                <label for="part[todos]"> &nbsp; &nbsp;Todos</label><br>
+
+                <?php
+
+                foreach ($partidos as $partido){
+                    echo '<input type="checkbox" name="partido[]" id="part['.$partido->Num_Partido.']" checked>
+                        <label for="part['.$partido->Num_Partido.']"> &nbsp; &nbsp;'.$partido->Sigla.'</label><br>';
+                }
+
+                ?>
             </div>
         </div>
 
     </div>
     <div class="propostas_conteudo col-md-9 jumbotron">
         <div class="propostas_titulo">
-            <h2>Lista de propostas</h2>
+            <h2>Lista de propostas
             <ul class="propostas_ordem nav nav-pills">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
@@ -63,34 +81,14 @@
                         <li><a href="#">Comentários</a></li>
                     </ul>
                 </li>
+            </h2>
             </ul>
         </div>
-
-        <div class="proposta_box">
-            <div class="proposta_superior">
-                <h3 class="proposta_title"><a href="#">Bolsa família de 1milhao de dinheiros</a></h3>
-                <div class="proposta_rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                <span>por <a href="#">Dilma 13</a></span>
-            </div>
-            <p class="proposta_texto">Nullam quis risus eget vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-
-            <span class="proposta_vis">3132 <i class="fa fa-eye"></i></span><a href="#" class="btn btn-primary btn-xs">Veja mais</a>
-        </div>
-
-        <div class="proposta_box">
-            <div class="proposta_superior">
-                <h3 class="proposta_title">Bolsa família de 1milhao de dinheiros</h3>
-            </div>
-            <p class="proposta_texto">Nullam quis risus eget vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-            <a href="#" class="btn btn-primary btn-xs">Veja mais</a>
-        </div>
-
-        <div class="proposta_box">
-            <div class="proposta_superior">
-                <h3 class="proposta_title">Bolsa família de 1milhao de dinheiros</h3>
-            </div>
-            <p class="proposta_texto">Nullam quis risus eget vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-            <a href="#" class="btn btn-primary btn-xs">Veja mais</a>
-        </div>
+        <?php
+            foreach($propostas as $proposta){
+                $data["proposta"] = $proposta;
+                $this->load->view("propostas/box_preview", $data);
+            }
+        ?>
     </div>
 </div>

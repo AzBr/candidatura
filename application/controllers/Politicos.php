@@ -5,8 +5,10 @@ class Politicos extends CI_Controller {
 
     public function index()
     {
+        $this->load->model("Modelpoliticos");
+        $data['politicos'] = $this->Modelpoliticos->pegaPoliticos();
         $this->load->view("template/header");
-        $this->load->view("politicos/listagem");
+        $this->load->view("politicos/listagem", $data);
         $this->load->view("template/footer");
     }
 }

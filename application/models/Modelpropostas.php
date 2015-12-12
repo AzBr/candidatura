@@ -1,5 +1,5 @@
 <?php
-class Modelpoliticos extends CI_Model {
+class Modelpropostas extends CI_Model {
 
     public function __construct()
     {
@@ -9,10 +9,10 @@ class Modelpoliticos extends CI_Model {
 
     }
     public function pegaPropostas(){
-        $result = $this->db->query("SELECT * FROM \"Proposta\"");
+        $query = $this->db->query("SELECT * FROM \"Proposta\"");
+        $result = $query->result();
         return $result;
     }
-
 
     public function avaliacaoProposta($id){
         $result = $this->db->query("SELECT * FROM \"Avaliacao_Proposta\" WHERE \"Avaliacao\".\"id_Proposta\" =\"".$id."\"");
