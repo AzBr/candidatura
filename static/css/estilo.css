@@ -136,3 +136,9 @@ body{
 .politico_infos_inf > a{
     float:right;
 }
+.tab-pane{
+    background-color:white;
+}
+.form-horizontal{
+    padding-top:10px;
+}

@@ -14,6 +14,9 @@ class Modelpoliticos extends CI_Model {
         return $result;
     }
 
-
-
+    public function pegaPolitico($idPolitico){
+        $query = $this->db->query("SELECT * FROM \"Politico\" WHERE id_Politico=\"".$idPolitico."\"");
+        $result = $query->result();
+        return $result;
+    }
 }

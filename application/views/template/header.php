@@ -3,6 +3,8 @@
     <title>Politica</title>
     <script src="<?php echo base_url(); ?>static/js/jquery-2.1.4.js"></script>
     <script src="<?php echo base_url(); ?>static/js/bootstrap.js"></script>
+    <script src="<?php echo base_url(); ?>static/js/filtros.js"></script>
+
 
     <link href="<?php echo base_url(); ?>static/square/grey.css" rel="stylesheet">
     <script src="<?php echo base_url(); ?>static/js/icheck.js"></script>

@@ -13,7 +13,11 @@ class Propostas extends CI_Controller {
 		$data['propostas'] = $this->Modelpropostas->pegaPropostas();
 		// $data['categorias'] = array("tes", "test");
 		$this->load->view("template/header");
-		$this->load->view("propostas/listagem", $data);
+		$this->load->view("propostas/principal", $data);
 		$this->load->view("template/footer");
+	}
+
+	public function lista(){
+		$this->load->view("propostas/listagem");
 	}
 }

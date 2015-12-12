@@ -1,93 +1,24 @@
-<form class="form-horizontal">
-    <fieldset>
-        <h1>Painel do Usuario</h1><hr>
-        <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Nome</label>
-            <div class="col-lg-10">
-                <input class="form-control" id="inputEmail" placeholder="Nome" type="text">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-            <div class="col-lg-10">
-                <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-            <div class="col-lg-10">
-                <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="inputPassword" class="col-lg-2 control-label">Repeat Password</label>
-            <div class="col-lg-10">
-                <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Descricao</label>
-            <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="textArea"></textarea>
-            </div>
-        </div>
+<h1>Painel do Usuario</h1><hr>
 
-        <label for="select" class="col-lg-2 control-label">Cargo</label>
-        <div class="col-lg-10">
-            <select class="form-control" id="select">
-                <?php
-                foreach ($cargos as $cargo){
-                    echo "<option>$cargo->Nome</option>";
-                }
-                ?>
-            </select></div><br><br>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#informacoes" data-toggle="tab" aria-expanded="true">Informações</a></li>
+    <li class=""><a href="#home" data-toggle="tab" aria-expanded="false">Biografia</a></li>
+    <li class=""><a href="#home" data-toggle="tab" aria-expanded="false">Home</a></li>
+    <li class=""><a href="#home" data-toggle="tab" aria-expanded="false">Home</a></li>
+    <li class=""><a href="#home" data-toggle="tab" aria-expanded="false">Home</a></li>
+</ul>
 
-        <label for="select" class="col-lg-2 control-label">Partido</label>
-        <div class="col-lg-10">
-            <select class="form-control" id="select">
-                <?php
-                foreach ($partidos as $partido){
-                    echo "<option>$partido->Num_Partido - $partido->Sigla</option>";
-                }
-                ?>
-            </select></div><br><br>
-
-        <div class="form-group">
-            <label for="inputEmail" class="col-lg-2 control-label">Numero</label>
-            <div class="col-lg-10">
-                <input class="form-control" id="inputEmail" placeholder="Numero" type="text">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="col-lg-2 control-label">Situacao</label>
-            <div class="col-lg-10">
-                <div class="radio">
-                    <label>
-                        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
-                        Disputando Eleicao
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-                        Eleito
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-                        Nao Eleito
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-                <button type="reset" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </div>
-    </fieldset>
-</form>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="informacoes">
+        <?php $this->load->view("painel/informacoes")?>
+    </div>
+    <div class="tab-pane fade" id="home">
+        <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown1">
+        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+    </div>
+    <div class="tab-pane fade" id="dropdown2">
+        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+    </div>
+</div>
