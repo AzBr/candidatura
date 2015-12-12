@@ -8,8 +8,8 @@ body{
     border-radius:20px;
 }
 .politico_perfil_mini{
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
 }
 .politico_menu{
     margin-top:10px;
@@ -53,7 +53,7 @@ body{
 }
 .propostas_bloco_filtro{
     background-color:white;
-    height:calc(100vh - 70px);
+    padding-bottom:10px;
 }
 .politico_bloco{
     background-color:green;
@@ -72,26 +72,45 @@ body{
 }
 .panel-body{
     font-size:12px;
+    max-height:300px;
+    overflow:auto;
 }
 .politicos_bloco{
     padding:10px !important;
 }
+.politico_box{
+
+    overflow:auto;
+    margin-bottom:15px;
+}
 .politico_foto_box{
-    width:100px;
+    overflow:auto;
+    width:120px;
     margin-right:10px;
     float:left;
 }
 .politico_infos{
     float:left;
     display:table;
+
 }
 .politico_infos > h5 > span{
+    margin-top:0px !important;
+
     font-size:13px;
     font-weight: normal;
 }
 .politico_infos > p{
     font-size:12px;
+
     float:left;
+    margin-top:2px;
+
+}
+.politico_infos > h5{
+
+    margin-top:0px;
+    margin-bottom:0px !important;
 }
 .proposta_box > a{
     float:right;
@@ -103,4 +122,17 @@ body{
 .proposta_title > a{
     color:black;
 
+}
+.politico_perfil_conteudo{
+    font-size:12px !important;
+}
+.politico_likes{
+    float:right !important;
+    font-size:14px !important;
+}
+.politico_infos_inf{
+    width:100%;
+}
+.politico_infos_inf > a{
+    float:right;
 }
