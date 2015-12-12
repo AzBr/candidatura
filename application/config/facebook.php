@@ -17,9 +17,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |  facebook_permissions          array   The permissions you need.
 */
 
-$config['facebook_app_id']              = '982619171795372';
-$config['facebook_app_secret']          = '931fa886d5f379a5c485af855f692b14';
+$config['facebook_app_id']              = '742607442506782';
+$config['facebook_app_secret']          = '12c6cf41cb49aa3e017902d485001ea9';
 $config['facebook_login_type']          = 'web';
-$config['facebook_login_redirect_url']  = 'localhost/login';
-$config['facebook_logout_redirect_url'] = 'localhost/logout';
-$config['facebook_permissions']         = array('public_profile');
+$config['facebook_login_redirect_url']  = 'login/web_login';
+$config['facebook_logout_redirect_url'] = 'login/logout';
+$config['facebook_permissions']         = array('public_profile', 'user_location', 'user_birthday');

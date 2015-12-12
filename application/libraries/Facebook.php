@@ -198,7 +198,9 @@ Class Facebook {
                     ->asArray();
 
                 // Return data
-                return $this->response(200, 'success', array('user_id' => $user['id']));
+                return $this->response(200, 'success', array(
+                    'user_id' => $user['id'],
+                ));
             }
             catch(FacebookRequestException $e)
             {
@@ -232,7 +234,7 @@ Class Facebook {
             try
             {
                 // Get user details
-                $user = (new FacebookRequest($session, 'GET', '/me'))
+                $user = (new FacebookRequest($session, 'GET', '/me/?fields=id, name, gender, birthday, location'))
                     ->execute()
                     ->getGraphObject()
                     ->asArray();

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Example extends CI_Controller {
+class Login extends CI_Controller {
 
 	public function __construct()
 	{
@@ -13,7 +13,7 @@ class Example extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('examples/start');
+		$this->load->view('login/start');
 	}
 
 	public function web_login()
@@ -33,13 +33,14 @@ class Example extends CI_Controller {
 
 		}
 
-		$this->load->view('examples/web', $data);
+		$this->load->view('login/web', $data);
 	}
 
+	/*
 	public function js_login()
 	{
 		$this->load->view('examples/js');
-	}
+	}*/
 
 	public function post()
 	{
@@ -54,6 +55,6 @@ class Example extends CI_Controller {
 	public function logout()
 	{
 		$this->facebook->destroy_session();
-		redirect('example/web_login', redirect);
+		redirect('login/web_login', redirect);
 	}
 }
