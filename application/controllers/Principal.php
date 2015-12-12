@@ -9,4 +9,15 @@ class Principal extends CI_Controller {
 		$this->load->view("principal/index");
 		$this->load->view("template/footer");
 	}
+
+	public function campanha(){
+
+
+		$this->load->view("template/header");
+		$this->load->view("principal/campanha");
+		$this->load->view("template/footer");
+
+	}
+
+
 }
