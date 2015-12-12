@@ -32,6 +32,7 @@
                         <li><a href="<?php echo base_url()?>p/dilma13">Sobre</a></li>
                         <li><a href="<?php echo base_url()?>propostas">Propostas</a></li>
                         <li><a href="<?php echo base_url()?>politicos">Campanhas</a></li>
+                        <li><a href="<?php echo base_url()?>painel">Painel do Usuario</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <form class="navbar-form navbar-left" role="search">
