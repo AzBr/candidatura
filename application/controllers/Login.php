@@ -8,39 +8,26 @@ class Login extends CI_Controller {
 		parent::__construct();
 
 		$this->load->library('facebook');
-		$this->load->helper('url');
+		$this->load->helper(array('url','form'));
 	}
 
 	public function index()
 	{
-		$this->load->view('login/start');
+		$this->load->view('login/signin');
 	}
-
+	/**
+	 * Método de verificação de usuario e permissao de acesso.
+	*/
 	public function web_login()
 	{
-
-		$data['user'] = array();
-
 		if ($this->facebook->logged_in())
 		{
-			$user = $this->facebook->user();
-
-			if ($user['code'] === 200)
-			{
-				unset($user['data']['permissions']);
-				$data['user'] = $user['data'];
-			}
-
+			redirect(base_url()."principal/lancecampanha");
 		}
-
-		$this->load->view('login/web', $data);
+		else {
+			redirect($this->facebook->login_url());
+		}
 	}
-
-	/*
-	public function js_login()
-	{
-		$this->load->view('examples/js');
-	}*/
 
 	public function post()
 	{

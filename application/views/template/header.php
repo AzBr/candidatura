@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/estilo.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>static/css/bootstrap-social.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -37,12 +38,7 @@
                         <li><a href="<?php echo base_url()?>painel">Painel do Usuario</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Pesquisar por...">
-                            </div>
-                            <button type="submit" class="btn btn-default">Ok</button>
-                        </form>
+                        <li><a href="<?php echo base_url()?>login/web_login">Lance sua campanha!</a></li>
                     </ul>
                 </div>
             </div>
