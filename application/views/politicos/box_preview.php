@@ -40,7 +40,7 @@
                 break;
 
         }
-        ?> </span><p class="politico_likes text-success">131  <i class="fa fa-thumbs-up"></i></p></h5></a>
+        ?> </span><p class="politico_likes text-success"><?php echo $avaliacao == NULL ? "0" : $avaliacao; ?> <i class="fa fa-thumbs-up"></i></p></h5></a>
         <p>
            <?php echo $introducao; ?>
         </p>
