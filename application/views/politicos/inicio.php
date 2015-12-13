@@ -1,4 +1,4 @@
-<h1><?php echo $candidato->Nome; ?>, <?php echo $candidato->Num_Partido; ?></h1>
+<h1><?php echo $candidato->Nome; ?>, <?php echo $candidato->Num_Partido; ?> <span class="pull-right"><i class="iconlike fa fa-plus-circle"></i></span></h1>
 <blockquote>
     <p><?php echo $candidato->slogan; ?></p>
 </blockquote>

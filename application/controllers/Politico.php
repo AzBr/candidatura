@@ -16,6 +16,8 @@ class Politico extends CI_Controller {
 			if(isset($this->Modelpolitico->pegaPolitico($id)[0])){
 				$this->load->view("template/header");
 				$data['candidato'] = $this->Modelpolitico->pegaPolitico($id)[0];
+				$data['propostas'] = $this->Modelpolitico->propostasPolitico($id);
+
 				switch($pagina){
 					case "biografia":
 						$data["local"] = "biografia";
@@ -40,6 +42,7 @@ class Politico extends CI_Controller {
 			$id = $this->uri->segment_array()[2];
 			if(isset($this->Modelpolitico->pegaPolitico($id)[0])){
 				$data['candidato'] = $this->Modelpolitico->pegaPolitico($id)[0];
+				$data['propostas'] = $this->Modelpolitico->propostasPolitico($id);
 				$data["local"] = "inicio";
 				$this->load->view("template/header");
 				$this->load->view("politicos/perfil", $data);

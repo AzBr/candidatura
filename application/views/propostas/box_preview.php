@@ -2,7 +2,7 @@
     <div class="proposta_superior">
         <h3 class="proposta_title"><a href="#"><?php echo $proposta->Titulo?></a></h3>
         <div class="proposta_rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-        <span>por <a href="<?php echo base_url()?>"><?php echo $proposta->id_Usuario?></a></span>
+        <span>por <a href="<?php echo base_url()?>"><?php echo $proposta->id_Politico?></a></span>
     </div>
     <p class="proposta_texto"><?php echo $proposta->Descricao?></p>
 

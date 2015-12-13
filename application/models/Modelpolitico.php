@@ -18,5 +18,10 @@ class Modelpolitico extends CI_Model
         return $result;
 
     }
+    public function propostasPolitico($id){
+        $query = $this->db->query("SELECT * FROM \"Proposta\" WHERE \"Proposta\".\"id_Politico\" = '".$id."'");
+        $result = $query->result();
+        return $result;
+    }
 
 }
