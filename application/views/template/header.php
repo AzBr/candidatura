@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Início <span class="sr-only">(current)</span></a></li>
-                        <li><a href="<?php echo base_url()?>p/dilma13">Sobre</a></li>
+                        <li><a href="<?php echo base_url()?>p/3">Sobre</a></li>
                         <li><a href="<?php echo base_url()?>propostas">Propostas</a></li>
                         <li><a href="<?php echo base_url()?>politicos">Campanhas</a></li>
                         <li><a href="<?php echo base_url()?>painel">Painel do Usuario</a></li>

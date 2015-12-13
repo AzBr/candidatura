@@ -53,3 +53,4 @@ $route['default_controller'] = 'principal';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['p/(:any)'] = 'politico/perfil/$1';
+$route['p/(:any)/(:any)'] = 'politico/perfil/$1/$2';

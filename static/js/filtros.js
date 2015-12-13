@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".atualiza_proposta").on("click", function(){
         var params = pegaFiltrosProposta();
-        enviaFiltro("/propostas/lista", params);
+        enviaFiltro("/propostas", params);
     })
 
     function pegaFiltrosProposta(){
@@ -33,14 +33,14 @@ $(document).ready(function(){
     }
 
     function enviaFiltro(url, params){
-        $( ".box_propostas" ).html("<i class=\"fa fa-spinner fa-pulse\"></i>");
+        $( "body" ).html("<i class=\"fa fa-spinner fa-pulse\"></i>");
         var request = $.ajax({
             url: url,
-            method: "POST",
+            method: "GET",
             data: params
         });
         request.done(function( msg ) {
-            $( ".box_propostas" ).html( msg );
+            $( "body" ).html( msg );
         });
         request.fail(function( jqXHR, textStatus ) {
             alert( "Request failed: " + textStatus );

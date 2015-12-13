@@ -8,10 +8,26 @@ class Modelpropostas extends CI_Model {
         parent::__construct();
 
     }
-    public function pegaPropostas(){
-        $query = $this->db->query("SELECT * FROM \"Proposta\"");
+    public function pegaPropostas($pag,$qtd, $cats, $estados, $partidos){
+
+        if(isset($cats, $estados, $partidos)){
+            $cats = implode(",", $cats);
+            $estados = implode(",", $estados);
+            $partidos = implode(",", $partidos);
+        }
+
+        $offset = $qtd*($pag-1);
+        $query = $this->db->query("SELECT * FROM \"Proposta\" limit ".$qtd." offset ".$offset);
+
         $result = $query->result();
         return $result;
+    }
+
+    public function totalPaginas(){
+        $query = $this->db->query("SELECT COUNT(*) FROM \"Proposta\"");
+
+        $result = $query->result();
+        return $result[0];
     }
 
     public function avaliacaoProposta($id){
