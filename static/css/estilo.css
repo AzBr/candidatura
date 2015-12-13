@@ -6,7 +6,7 @@ body{
     margin-top:5px;
     width:180px;
     height:180px;
-    border-radius:20px;
+    border-radius:10px;
 }
 .politico_perfil_mini{
     width:120px;
@@ -40,6 +40,7 @@ body{
 }
 .jumbotron{
     background-color:white;
+    overflow:auto;
 }
 .proposta_veja{
     float:right;
@@ -145,4 +146,25 @@ body{
 }
 .form-horizontal{
     padding-top:10px;
+}
+#saiba{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.iconlogo{
+    height: 21px;
+    padding-left:0px !important;
+    color:#eb6864;
+
+}
+.iconlogo_txt{
+    padding-left:2px !important;
+    padding-right:2px !important;
+
+}
+.logo{
+    padding-right:2px !important;
+}
+.bloco_geral_politicos{
+    min-height:90vh;
 }

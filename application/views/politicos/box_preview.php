@@ -1,9 +1,9 @@
 <div class="politico_box">
     <div class="politico_foto_box">
-        <a href="/p/<?php echo $id_Usuario; ?>"><img src="<?php echo $Imagem; ?>" class="politico_perfil_mini"/></a>
+        <a href="/p/<?php echo $id_Politico; ?>"><img src="<?php echo $Imagem; ?>" class="politico_perfil_mini"/></a>
     </div>
     <div class="politico_infos col-md-10">
-        <a href="/p/<?php echo $id_Usuario; ?>"><h5><?php echo $PoliticoNome; ?> - <span>Candidato(a) a <?php
+        <a href="/p/<?php echo $id_Politico; ?>"><h5><?php echo $PoliticoNome; ?> - <span>Candidato(a) a <?php
 
         switch ($id_Cargo){
 
@@ -45,7 +45,7 @@
            <?php echo $introducao; ?>
         </p>
         <div class="politico_infos_inf">
-            <a href="/p/<?php echo $id_Usuario; ?>" class="btn btn-primary btn-xs">Ver campanha</a>
+            <a href="/p/<?php echo $id_Politico; ?>" class="btn btn-primary btn-xs">Ver campanha</a>
         </div>
     </div>
 </div>

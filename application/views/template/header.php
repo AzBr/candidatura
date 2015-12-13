@@ -32,23 +32,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo base_url()?>">Candidatura</a>
+                    <a class=" navbar-brand" href="<?php echo base_url()?>">Candidatura</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
-                                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="<?php echo base_url()?>p/dilma13">Sobre</a></li>
+                            <a href="#" class="iconlogo_txt dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">
+                                <span class="iconlogo glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><a href="<?php echo base_url()?>/principal/sobre">Sobre</a></li>
                                 <li><a href="<?php echo base_url()?>propostas">Propostas</a></li>
                                 <li><a href="<?php echo base_url()?>politicos">Campanhas</a></li>
                             </ul>
                         </li>
 
                     </ul>
+
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="<?php echo base_url()?>principal/lancecampanha">Lance sua campanha!</a></li>
 

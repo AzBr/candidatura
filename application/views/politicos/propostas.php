@@ -1,4 +1,1 @@
-<div class="politico_perfil_conteudo col-md-9 jumbotron">
-
-</div>
-</div>
+<?php $this->load->view("propostas/box_preview");?>

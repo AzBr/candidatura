@@ -1,4 +1,2 @@
-<div class="politico_perfil_conteudo col-md-9 jumbotron">
-
-</div>
-</div>
+<h2><?php echo $candidato->bio_titulo?></h2>
+<p><small><?php echo $candidato->Descricao?></small></p>

@@ -10,6 +10,13 @@ class Principal extends CI_Controller {
 		$this->load->view("template/footer");
 	}
 
+	public function sobre()
+	{
+		$this->load->view("template/header");
+		$this->load->view("principal/sobre");
+		$this->load->view("template/footer");
+	}
+
 	public function lancecampanha()
 	{
 		$this->load->view("template/header");
