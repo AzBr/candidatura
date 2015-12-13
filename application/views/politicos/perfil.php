@@ -9,7 +9,8 @@
                     <li <?php if($local == "realizacoes") echo "class=\"active\"";?>><a href="/p/<?php echo $candidato->id_Politico; ?>/realizacoes">Realizações</a></li>
                     <li <?php if($local == "propostas") echo "class=\"active\"";?>><a href="/p/<?php echo $candidato->id_Politico; ?>/propostas">Propostas</a></li>
                     <li <?php if($local == "multimedia") echo "class=\"active\"";?>><a href="/p/<?php echo $candidato->id_Politico; ?>/multimedia">Multimídia</a></li>
-                </ul>
+                </ul><br><button id="like" type="button" class="btn btn-default" data-cand="<?php echo $candidato->id_Politico ?>"><span class="glyphicon glyphicon-thumbs-up"></span> LIKE</button>
+
             </div>
         </div>
     </div>
@@ -17,3 +18,10 @@
         <?php $this->load->view("politicos/".$local); ?>
     </div>
 </div>
+<script>
+    $("#like").on("click", function(){
+        $("#like").html("<span class=\"glyphicon glyphicon-ok\"> LIKED!</span>");
+        $("#like").toggleClass("btn-success");
+
+    });
+</script>

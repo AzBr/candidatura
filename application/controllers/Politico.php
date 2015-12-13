@@ -17,6 +17,7 @@ class Politico extends CI_Controller {
 				$this->load->view("template/header");
 				$data['candidato'] = $this->Modelpolitico->pegaPolitico($id)[0];
 				$data['propostas'] = $this->Modelpolitico->propostasPolitico($id);
+				$data['avaliacao'] = $this->Modelpolitico->pegaThumbPolitico($id);
 
 				switch($pagina){
 					case "biografia":

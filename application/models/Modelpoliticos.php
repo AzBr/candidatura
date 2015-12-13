@@ -13,5 +13,10 @@ class Modelpoliticos extends CI_Model {
         $result = $query->result();
         return $result;
     }
-
+    public function pegaThumbPoliticos(){
+        $query = $this->db->query("SELECT \"a\".\"Nome\", SUM(\"Avaliacao_Politico\".\"Thumb\") FROM \"Avaliacao_Politico\" INNER JOIN (SELECT * FROM \"Usuario\" INNER JOIN \"Politico\" ON \"Usuario\".\"id_Usuario\" = \"Politico\".\"id_Usuario\") a ON \"Avaliacao_Politico\".\"id_Politico\" = \"a\".\"id_Politico\" GROUP BY \"a\".\"Nome\"
+");
+        $result = $query->result();
+        return $result;
+    }
 }
