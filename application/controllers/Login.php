@@ -42,6 +42,6 @@ class Login extends CI_Controller {
 	public function logout()
 	{
 		$this->facebook->destroy_session();
-		redirect('login/web_login', redirect);
+		redirect('/', redirect);
 	}
 }

@@ -15,10 +15,10 @@ class Politico extends CI_Controller {
 			$pagina = $this->uri->segment_array()[3];
 			if(isset($this->Modelpolitico->pegaPolitico($id)[0])){
 				$this->load->view("template/header");
-				$data['avaliacao'] = $this->Modelpolitico->pegaThumbPolitico($id);
+				//$data['avaliacao'] = $this->Modelpolitico->pegaThumbPolitico($id);
 				$data['candidato'] = $this->Modelpolitico->pegaPolitico($id)[0];
 				$data['propostas'] = $this->Modelpolitico->propostasPolitico($id);
-				$data['avaliacao'] = $this->Modelpolitico->pegaThumbPolitico($id);
+				//$data['avaliacao'] = $this->Modelpolitico->pegaThumbPolitico($id);
 
 				switch($pagina){
 					case "biografia":

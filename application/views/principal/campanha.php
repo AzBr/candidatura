@@ -6,6 +6,6 @@
     ainda não tão expressivos no jogo político, mas que procuram uma <i>oportunidade</i> e <i>espaço</i> para crescerem politicamente através de
     seus <i>atos,realizações</i>, baseados sempre na clareza e compromisso com os seus eleitores.</h2><br>
     <ul class="pager">
-        <a href="#" class="btn btn-primary btn-lg">Autenticar com o facebook e começar!</a>
+        <a href="<?php echo base_url(); ?>login/web_login" class="btn btn-primary btn-lg">Autenticar com o facebook e começar!</a>
 </ul>
 </div>

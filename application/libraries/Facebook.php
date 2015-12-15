@@ -234,7 +234,7 @@ Class Facebook {
             try
             {
                 // Get user details
-                $user = (new FacebookRequest($session, 'GET', '/me/?fields=id, name, gender, birthday, location'))
+                $user = (new FacebookRequest($session, 'GET', '/me/?fields=id, name, gender, birthday, picture, location'))
                     ->execute()
                     ->getGraphObject()
                     ->asArray();
