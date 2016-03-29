@@ -9,7 +9,7 @@ A meta dessa ferramenta era a de se criar um tipo de plataforma simples e de bai
 A intenção foi obter um sistema que incorporasse o melhor de cada rede social e complementado-as com gráficos e funcionalidades específicas para o tipo de evento de uma eleição. O mercado para a plataforma seria abrangente e passando por campanhas públicas, eleições de governo, sindicatos e até mesmo organizações privadas, todas com possibilidade de restrição de visibilidade do público escolhido.
 
 Autoria:
-    @AzBr
-    @giancarllorojas
+    AzBr
+    giancarllorojas
     BMonsef
-    Tiozão
+    Vitor Israel
