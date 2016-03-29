@@ -12,4 +12,4 @@ Autoria:
     AzBr
     giancarllorojas
     BMonsef
-    Vitor Israel
+    Vitor_Israel
